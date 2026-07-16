@@ -1,0 +1,14 @@
+.rank-container{
+    font-size:20px; 
+    
+    position:relative;
+    top: -50px;
+}
+
+.user-text{
+    background:black;
+    color:white;
+    padding:5px;
+    border-radius:10px;
+    font-weight:100;
+}

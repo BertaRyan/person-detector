@@ -1,0 +1,91 @@
+.errorMessage{
+    position:absolute;
+    bottom:14px;
+}
+
+.register-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: max-content;
+    padding: 50px 25px;
+    position: absolute;
+   bottom: 30%;
+    left: 30%;
+    
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    corner-shape: notch;
+    animation: morph 2s infinite alternate;
+    opacity:1;
+    transition:.5s all  ease-in-out;
+    width:40%;
+    transition-delay:.5s;
+
+}
+.hide{
+    opacity: 0;
+}
+
+.hide-register-form{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: max-content;
+    padding: 50px 25px;
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    color: white;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    corner-shape: notch;
+    animation: morph 2s infinite alternate;
+    opacity: 0;
+    scale: 0;
+    width: 40%;
+    transition:.5s all;
+}
+
+.register-form-container button {
+    width: 100%;
+    padding: 5px 8px;
+    background: #149c9c;
+    border: 1px solid #149c9c;
+    border-radius: 5px;
+    corner-shape: notch;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: .5s all;
+}
+
+.register-form-container button:hover {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.register-form-container label[for="email"] {
+    margin-right: 32px;
+}
+
+label[for="password"]{
+    margin-right:8px;
+}
+
+.register-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input {
+        font-size: 19px;
+        text-indent: 10px;
+    }
+}

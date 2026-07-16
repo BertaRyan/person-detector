@@ -1,0 +1,8 @@
+.box{
+    border:3px solid red;
+    position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        cursor: pointer;
+}

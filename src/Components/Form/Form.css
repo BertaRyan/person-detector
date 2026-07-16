@@ -1,0 +1,134 @@
+
+.form-body{
+    min-height: 10dvh;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    position:relative;
+    z-index:0;
+    margin:150px 70px 0 30px;
+    transition: 1s all;
+    transition-delay: 3s all;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.hide-form-body{
+    min-height: 10dvh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+        z-index: 0;
+        margin: 150px 70px 0 30px;
+        transition: .5s all;
+        transition-delay: 3s transform;
+        transform: scale(0);
+        opacity: 0;
+}
+
+@media (max-height:700px){
+    .form-body{
+        margin:50px 15px 0px 15px;
+    }
+}
+
+.particles{
+    position:absolute;
+    z-index:-1;
+}
+
+.tilt{
+position: absolute;
+    top: 25%;
+    background: rgba(0, 0, 0, 0.502);
+    padding: 50px 25px;
+    color: white;
+    backdrop-filter: blur(10px) brightness(100%);
+    -webkit-backdrop-filter: blur(1.5px) brightness(100%);
+    animation: morph 2s infinite alternate;
+    animation-delay: 2s;
+    z-index:-1;
+}
+
+.link-form{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+    border-radius:10px;
+   
+    p{
+        font-size:25px;
+        margin-bottom:30px;
+    }
+}
+
+.spyware-container{
+    display:flex;
+    width:80%;
+}
+
+.link-form button{
+    padding:5px 40px;
+    background:#149c9c;
+    border:1px solid white;
+    border-radius:5px;
+    color:black;
+    transition: .5s all;
+    transform-origin:center;
+    cursor:pointer;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+animation: morph 2s infinite alternate;
+}
+.link-form input {
+    width:800%;
+    padding:5px 0;
+    background: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    transition: .5s all;
+    transform-origin: center;
+    cursor:pointer;
+    text-indent:15px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius: 0px;
+    animation: morph 2s infinite alternate;
+}
+
+@keyframes morph {
+    from {
+        corner-shape: square;
+    }
+
+    to {
+        corner-shape: notch;
+    }
+}
+
+.link-form button:hover {
+    background: black;
+    border: 1px solid #149c9c;
+    color: #149c9c;
+}
+
+.file-input{
+    border:1px solid white;
+}
+
+.spyware-img-container{
+    width:400px;
+    margin: 0 auto;
+}
+
+.spyware-img-container  img{
+    width: 100%;
+}
+
+.img-container{
+        position:relative;
+
+}

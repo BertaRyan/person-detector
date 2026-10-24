@@ -28,7 +28,7 @@ const Register = ({register, setRegister}) => {
             }
 
 
-            const resp = await fetch("https://person-detector-api-9qbp-bf764v2ql-ryans-projects-ba395f22.vercel.app//register", {
+            const resp = await fetch("https://person-detector-api-9qbp.vercel.app/register", {
                 method: "post",
                 headers: {"Content-Type" : "application/json"},
                 body: JSON.stringify(newUser)

@@ -21,7 +21,7 @@ const SignIn = ({register, signedIn, isSignedIn, currentUser, setCurrentUser }) 
       if(!emailValue || !passwordValue){
         throw new Error('Please fill out all fields')
       }
-      const res = await fetch("http://localhost:3000/signin", fetchOptions)
+      const res = await fetch("https://your-project.vercel.app/signin", fetchOptions)
       const data = await res.json()
       if(res.status === 200){
         isSignedIn(!signedIn)

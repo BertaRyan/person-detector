@@ -66,7 +66,7 @@ function App() {
   }
 
   const sendImageToHuggingFaceWithFetch = async (imgInputValue) => {
-    const response = await fetch('http://localhost:3000/post-image', {
+    const response = await fetch('https://your-project.vercel.app/post-image', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

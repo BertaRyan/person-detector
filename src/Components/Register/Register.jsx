@@ -28,7 +28,7 @@ const Register = ({register, setRegister}) => {
             }
 
 
-            const resp = await fetch("http://localhost:3000/register", {
+            const resp = await fetch("https://your-project.vercel.app/register", {
                 method: "post",
                 headers: {"Content-Type" : "application/json"},
                 body: JSON.stringify(newUser)

@@ -18,7 +18,7 @@ const Form = ({ handleFormImg, inputImg, signedIn, sendImageToHuggingFaceWithFet
     setImgInputValue("")
    
     try{
-      const res = await fetch(`http://localhost:3000/image`, {
+      const res = await fetch(`https://person-detector-api-9qbp-bf764v2ql-ryans-projects-ba395f22.vercel.app//image`, {
         method: "put",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(currentUser)

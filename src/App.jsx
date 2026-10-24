@@ -66,7 +66,7 @@ function App() {
   }
 
   const sendImageToHuggingFaceWithFetch = async (imgInputValue) => {
-    const response = await fetch('https://your-project.vercel.app/post-image', {
+    const response = await fetch('https://person-detector-api-9qbp-bf764v2ql-ryans-projects-ba395f22.vercel.app//post-image', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
